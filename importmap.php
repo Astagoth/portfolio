@@ -25,4 +25,14 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
+    'tailwindcss' => [
+        'version' => '3.4.10',
+    ],
+    'boxicons' => [
+        'version' => '2.1.4',
+    ],
+    'boxicons/css/boxicons.min.css' => [
+        'version' => '2.1.4',
+        'type' => 'css',
+    ],
 ];

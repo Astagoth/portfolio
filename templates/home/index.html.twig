@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio - Jordan{% endblock %}
+
+{% block body %}
+    <!-- Home page of my portfolio -->
+    <!-- Header with sticky menu between for better user experience -->
+    <header class="container max-w-screen-xl mx-auto px-4" id="header">
+        <nav class="flex items-center justify-between p-4">
+            <a href="#" id="logo">Jordan</a>
+            <div class="sticky bot-0 flex" id="nav_menu">
+                <ul>
+                    <li>
+                        <a href="#" id="nav_home">
+                            Home
+                        </a>
+                        <a href="#" id="nav_projects">
+                            Mes projets
+                        </a>
+                        <a href="#" id="nav_contact">
+                            Me contacter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main container
+         Will contain a photo of me, a shot text about me and my skills
+    -->
+    <main id="main">
+
+        <!-- Section to display of photo of me -->
+        <section id="photo">
+            <img class="rounded-full w-50 h-50" src="{{ asset('img/photo-no-bg.png') }}" alt="Photo">
+        </section>
+
+        <!-- Section to talk about me -->
+        <section id="about-me">
+            <p>
+                A 24 ans, je suis actuellement en apprentissage autoditacte sur plusieurs languages.
+                Suite à un BTS en informatique au Lycée Edmond Labbé de Douai, j'ai pu acquérir les bases
+                de plusieurs languages (C++, C#, HTML, CSS, JavaScript, PHP), des notions en
+                base de données.
+            </p>
+        </section>
+
+        <!-- Section to show my skills -->
+        <section id="skills">
+            <span>Mes hardskills</span>
+            <h2>Mes compétences</h2>
+            <div id="skill-container">
+                <div id="skill-box">
+                    <div id="skill-column-one">
+                        <div id="skill-html">
+                            <box-icon type='logo' name='html5'></box-icon>
+                        </div>
+                        <div id="skill-css">
+                            <box-icon type='logo' name='css3'></box-icon>
+                        </div>
+                        <div id="skill-js">
+                            <box-icon type='logo' name='javascript'></box-icon>
+                        </div>
+                    </div>
+                    <div id="skill-column-two">
+                        <div id="skill-sql">
+                            <box-icon type='logo' name='postgresql'></box-icon>
+                        </div>
+                        <div id="skill-php">
+                            <box-icon type='logo' name='php'></box-icon>
+                        </div>
+                        <div id="skill-tailwindcss">
+                            <box-icon type='logo' name='tailwind-css'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

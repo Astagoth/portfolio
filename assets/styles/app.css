@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    background-color: skyblue;
+    background-color: #1F1F1FFF;
+    color: #BABEC4FF;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #BABEC4FF;
+}
+
+.skills {
+    color: #BABEC4FF;
 }
