@@ -13,7 +13,9 @@ a:visited {
     text-decoration: none;
     color: #BABEC4FF;
 }
-
-.skills {
-    color: #BABEC4FF;
+#span-skills {
+    color: #606060;
+}
+.skills_level {
+    font-size: 12px;
 }

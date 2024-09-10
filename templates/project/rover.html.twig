@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Rover!{% endblock %}
+
+{% block body %}
+    <!-- Rover Project page of my portfolio -->
+    <!-- Header with sticky menu between for better user experience -->
+    <header>
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <a class="w-16" href="#">Jordan</a>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="/">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/projects">Mes projets</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Me contacter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <box-icon onclick="onToggleMenu(this)" color="#BABEC4FF" name='menu' class="cursor-pointer md:hidden"></box-icon>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    </main>
+{% endblock %}
