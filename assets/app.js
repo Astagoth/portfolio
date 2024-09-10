@@ -8,4 +8,10 @@ import 'boxicons';
  */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+const navLinks = document.querySelector('.nav-links')
+function onToggleMenu(e) {
+    e.name = e.name === 'menu' ? 'x' : 'menu'
+    navLinks.classList.toggle('top-[9%]')
+}
+
+// console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
