@@ -1,5 +1,6 @@
 import './bootstrap.js';
 import 'boxicons';
+import './home.js';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -8,10 +9,5 @@ import 'boxicons';
  */
 import './styles/app.css';
 
-const navLinks = document.querySelector('.nav-links')
-function onToggleMenu(e) {
-    e.name = e.name === 'menu' ? 'x' : 'menu'
-    navLinks.classList.toggle('top-[9%]')
-}
 
 // console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
