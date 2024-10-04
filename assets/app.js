@@ -1,6 +1,6 @@
 import './bootstrap.js';
 import 'boxicons';
-import './home.js';
+import './home.js'
 /*
  * Welcome to your app's main JavaScript file!
  *

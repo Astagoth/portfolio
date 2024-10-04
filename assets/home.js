@@ -4,6 +4,6 @@ var menuButton = document.getElementById("menu");
 menuButton.addEventListener("click", onToggleMenu);
 function onToggleMenu()
 {
-    menuButton.name = menuButton.name === 'menu' ? 'x' : 'menu'
+    menuButton.setAttribute("name", 'menu' == menuButton.getAttribute("name") ? 'x' : 'menu')
     navLinks.classList.toggle('top-[5%]')
 }

@@ -6,11 +6,11 @@
     <!-- Project page of my portfolio -->
     <!-- Header with sticky menu between for better user experience -->
     <header>
-        <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <nav class="flex justify-between items-center w-[92%] mx-auto pb-4">
             <div>
                 <a class="w-16" href="#">Jordan</a>
             </div>
-            <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <div class="nav-links bg-slate-800 md:bg-transparent duration-500 md:static absolute md:min-h-fit min-h-[6vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a class="hover:text-gray-500" href="/">Accueil</a>
@@ -24,29 +24,30 @@
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <box-icon onclick="onToggleMenu(this)" color="#BABEC4FF" name='menu' class="cursor-pointer md:hidden"></box-icon>
+                <box-icon color="#BABEC4FF" name='menu' class="cursor-pointer md:hidden" id="menu"></box-icon>
             </div>
         </nav>
     </header>
 
     <main>
-        <h1>Mes projets</h1>
-        <div id="projects_container">
-            <div id="rover">
-                <img src="{{ asset('img/rover-no-bg.png') }}" alt="Projet Rover">
-                <h2>Rover</h2>
-                <a href="https://github.com/Astagoth/Projet-Rover" target="_blank">
-                    <box-icon type='logo' name='github' color="#BABEC4FF" size="lg" animation='tada-hover'></box-icon>
-                </a>
-            </div>
-            <div id="lastbreakout">
-                <img src="{{ asset('img/soon-no-bg.png') }}" alt="A venir...">
-                <h2>Last Breakout</h2>
-                <a href="https://github.com/Astagoth/last-breakout " target="_blank">
-                    <box-icon type='logo' name='github' color="#BABEC4FF" size="lg" animation='tada-hover'></box-icon>
-                </a>
+        <div class="flex flex-col justify-center">
+            <h1>Mes projets</h1>
+            <div id="projects_container" class="grid gap-4 grid-cols-2 mx-auto" style="background-color: green">
+                <div id="rover" style="background-color: red">
+                    <img src="{{ asset('img/rover-no-bg.png') }}" alt="Projet Rover">
+                    <h2>Rover</h2>
+                    <a href="https://github.com/Astagoth/Projet-Rover" target="_blank">
+                        <box-icon type='logo' name='github' color="#BABEC4FF" size="lg" animation='tada-hover'></box-icon>
+                    </a>
+                </div>
+                <div id="lastbreakout" style="background-color: blue">
+                    <img src="{{ asset('img/soon-no-bg.png') }}" alt="A venir...">
+                    <h2>Last Breakout</h2>
+                    <a href="https://github.com/Astagoth/last-breakout " target="_blank">
+                        <box-icon type='logo' name='github' color="#BABEC4FF" size="lg" animation='tada-hover'></box-icon>
+                    </a>
+                </div>
             </div>
         </div>
-        
     </main>
 {% endblock %}
